@@ -1,13 +1,15 @@
 let nums=[1,3,5,6]
 let target=5
 function searchTarget(nums,target){
+    for(let i=0;i<nums.length;i++){
     if(nums[i]==target){
         return i
     } 
-    else if(num[i]<target)
+    else if(nums[i]<target)
     {
-        return nums.length
+        return i
     }
-    return 0
+    }
+        return nums.length
 }
 console.log(searchTarget(nums,target))
